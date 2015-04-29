@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
+<org.geometerplus.android.fbreader.NavigationWindow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/navigation_panel"
+	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	android:layout_centerHorizontal="true"
+	android:visibility="gone"
+	android:focusable="false"
+	android:gravity="bottom"
+	android:paddingLeft="24dip"
+	android:paddingRight="24dip"
+	android:background="@color/primary"
 	android:orientation="vertical"
-	android:paddingLeft="9dip"
-	android:paddingRight="9dip"
 >
 	<TextView
 		android:id="@+id/navigation_text"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center_horizontal"
 		android:singleLine="true"
@@ -18,35 +26,23 @@
 	/>
 	<SeekBar
 		android:id="@+id/navigation_slider"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:paddingTop="4px"
 	/>
-	<LinearLayout
-		android:layout_width="fill_parent"
+	<RelativeLayout
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:orientation="horizontal"
-		android:weightSum="1.0"
 		android:layout_below="@id/navigation_slider"
 		android:layout_alignParentBottom="true"
 		android:paddingTop="4px"
 	>
-		<LinearLayout
-			android:layout_width="0dp"
-			android:layout_height="wrap_content"
-			android:layout_weight="0.25"
-		/>
 		<Button
 			android:id="@+id/navigation_reset_button"
 			style="?android:attr/buttonBarButtonStyle"
-			android:layout_width="0dp"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_weight="0.5"
+			android:layout_centerInParent="true"
 		/>
-		<LinearLayout
-			android:layout_width="0dp"
-			android:layout_height="wrap_content"
-			android:layout_weight="0.25"
-		/>
-	</LinearLayout>
-</LinearLayout>
+	</RelativeLayout>
+</org.geometerplus.android.fbreader.NavigationWindow>
