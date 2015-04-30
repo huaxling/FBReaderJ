@@ -6,52 +6,46 @@
 	android:layout_height="wrap_content"
 	android:layout_alignParentBottom="true"
 	android:layout_centerHorizontal="true"
+	android:layout_marginTop="25dp"
+	android:layout_marginBottom="25dp"
+	android:paddingLeft="15dp"
+	android:paddingRight="15dp"
+	android:background="@drawable/panel"
 	android:visibility="gone"
 	android:focusable="false"
 >
-	<FrameLayout
+	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
-		android:gravity="bottom"
-		android:layout_marginTop="25dp"
-		android:layout_marginBottom="25dp"
-		android:paddingLeft="15dp"
-		android:paddingRight="15dp"
-		android:background="@drawable/panel"
+		android:orientation="horizontal"
+		android:paddingTop="14dp"
+		android:paddingBottom="10dp"
+		android:paddingLeft="3dp"
+		android:paddingRight="3dp"
 	>
-		<LinearLayout
-			android:layout_width="fill_parent"
+		<ImageView
+			android:id="@+id/search_panel_previous"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:orientation="horizontal"
-			android:paddingTop="14dp"
-			android:paddingBottom="10dp"
-			android:paddingLeft="3dp"
-			android:paddingRight="3dp"
-		>
-			<ImageView
-				android:id="@+id/search_panel_previous"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/text_search_previous"
-				android:layout_marginLeft="4dp"
-				android:layout_marginRight="4dp"
-			/>
-			<ImageView
-				android:id="@+id/search_panel_close"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/text_search_close"
-				android:layout_marginLeft="4dp"
-				android:layout_marginRight="4dp"
-			/>
-			<ImageView
-				android:id="@+id/search_panel_next"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/text_search_next"
-				android:layout_marginLeft="4dp"
-				android:layout_marginRight="4dp"
-			/>
-		</LinearLayout>
-	</FrameLayout>
+			android:src="@drawable/text_search_previous"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+		/>
+		<ImageView
+			android:id="@+id/search_panel_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/text_search_close"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+		/>
+		<ImageView
+			android:id="@+id/search_panel_next"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/text_search_next"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+		/>
+	</LinearLayout>
 </org.geometerplus.android.fbreader.SimplePopupWindow>
